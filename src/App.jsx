@@ -75,67 +75,106 @@ function App() {
           impression
         </p>
       </section>
-      <section>
-        <div>
-          {/* .... */}
-          <div className="card w-96 bg-base-100 shadow-xl mt-8">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body border-b-2 mt-4">
-              <h2 className="card-title ">Spaghetti Bolognese</h2>
-              <p className="border-b-2">
-                Classic Italian pasta dish with savory meat sauce
-              </p>
-              <h2 className="text-1xl font-bold">Ingredients: 6</h2>
-              <ul className="border-b-2">
-                <li>500g ground beef</li>
-                <li>1 onion, chopped</li>
-                <li>2 cloves garlic, minced</li>
-              </ul>
-              <div className="flex">
-                <p> 30 minutes</p>
-                <p> 600 calories</p>
+      <section className="flex flex-auto ">
+        <section className="flex flex-auto gap-4">
+          <div>
+            {/* .... */}
+            <div className="card w-96 bg-base-100 shadow-xl mt-8">
+              <figure>
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                />
+              </figure>
+              <div className="card-body border-b-2 mt-4">
+                <h2 className="card-title ">Spaghetti Bolognese</h2>
+                <p className="border-b-2">
+                  Classic Italian pasta dish with savory meat sauce
+                </p>
+                <h2 className="text-1xl font-bold">Ingredients: 6</h2>
+                <ul className="border-b-2">
+                  <li>500g ground beef</li>
+                  <li>1 onion, chopped</li>
+                  <li>2 cloves garlic, minced</li>
+                </ul>
+                <div className="flex">
+                  <p> 30 minutes</p>
+                  <p> 600 calories</p>
+                </div>
+              </div>
+              <button class="btn btn-success w-1/2 rounded-3xl justify-center">
+                Want To Cook
+              </button>
+            </div>
+          </div>
+          <div className="flex gap-6 ">
+            {/* ... */}
+            <div className="card w-96 bg-base-100 shadow-xl mt-8 ">
+              <figure>
+                <img
+                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="Shoes"
+                />
+              </figure>
+              <div className="card-body border-b-2 mt-4">
+                <h2 className="card-title ">Chicken Caesar Salad</h2>
+                <p className="border-b-2">
+                  Classic Italian pasta dish with savory meat sauce
+                </p>
+                <h2 className="text-1xl font-bold">Ingredients: 6</h2>
+                <ul className="border-b-2">
+                  <li>500g ground beeÎ</li>
+                  <li>1 onion, choppeÔ</li>
+                  <li>2 cloves garlic, minced</li>
+                </ul>
+                <div className="flex">
+                  <p> 30 minutes</p>
+                  <p> 600 calories</p>
+                </div>
+              </div>
+              <button class="btn btn-success w-1/2 rounded-3xl justify-center ">
+                Want To Cook
+              </button>
+            </div>
+
+            <div>
+              <table className="table  border-x-2 border-y-2 mt-6 rounded-2xl">
+                {/* head */}
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th className=" text-1xl font-bold">Name</th>
+                    <th>Time</th>
+                    <th>Calories</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* row 1 */}
+                  <tr>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                  </tr>
+                  {/* row 2 */}
+                  <tr>
+                    <td>Hart Hagerty</td>
+                    <td>Desktop Support Technician</td>
+                    <td>Purple</td>
+                  </tr>
+                  {/* row 3 */}
+                  <tr>
+                    <td>Brice Swyre</td>
+                    <td>Tax Accountant</td>
+                    <td>Red</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                <button className="btn btn-success">Preparing</button>
               </div>
             </div>
-            <button class="btn btn-success w-1/2 rounded-3xl justify-center">
-              Want To Cook
-            </button>
           </div>
-        </div>
-        <div>
-          {/* ... */}
-          <div className="card w-96 bg-base-100 shadow-xl mt-8">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body border-b-2 mt-4">
-              <h2 className="card-title ">Chicken Caesar Salad</h2>
-              <p className="border-b-2">
-                Classic Italian pasta dish with savory meat sauce
-              </p>
-              <h2 className="text-1xl font-bold">Ingredients: 6</h2>
-              <ul className="border-b-2">
-                <li>500g ground beeÎ</li>
-                <li>1 onion, choppeÔ</li>
-                <li>2 cloves garlic, minced</li>
-              </ul>
-              <div className="flex">
-                <p> 30 minutes</p>
-                <p> 600 calories</p>
-              </div>
-            </div>
-            <button class="btn btn-success w-1/2 rounded-3xl justify-center">
-              Want To Cook
-            </button>
-          </div>
-        </div>
+        </section>
       </section>
     </>
   );
