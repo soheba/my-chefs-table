@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -9,7 +11,7 @@ function App() {
   return (
     <>
       <div className="flex justify-around items-center gap-64   ">
-        <h1 className="text-3xl font-bold ">Recipe Calories</h1>
+        <p className="text-3xl font-bold">Recipe Calories</p>
         <div className="flex gap-2">
           <button type="submit" className="btn">
             Home
@@ -25,15 +27,21 @@ function App() {
           </button>
         </div>
         <div className="navbar bg-base-100">
-          <div className="flex-none gap-2">
-            <div className="form-control">
-              <input
-                type="text"
-                placeholder="Search"
-                className="input input-bordered w-24 md:w-auto"
+          <label className="input input-bordered flex items-center gap-2 rounded-3xl">
+            <input type="text" className="grow" placeholder="Search" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              className="w-4 h-4 opacity-70"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clipRule="evenodd"
               />
-            </div>
-          </div>
+            </svg>
+          </label>
         </div>
       </div>
       <div className="mt-8  ">
@@ -123,8 +131,8 @@ function App() {
                 </p>
                 <h2 className="text-1xl font-bold">Ingredients: 6</h2>
                 <ul className="border-b-2">
-                  <li>500g ground beeÎ</li>
-                  <li>1 onion, choppeÔ</li>
+                  <li>500g ground beef</li>
+                  <li>1 onion, chopped</li>
                   <li>2 cloves garlic, minced</li>
                 </ul>
                 <div className="flex">
@@ -136,14 +144,17 @@ function App() {
                 Want To Cook
               </button>
             </div>
-
+          </div>
+          <section>
+            <div>
+              <p className="text-2xl font-bold mt-4">Want to cook: 01</p>
+            </div>
             <div>
               <table className="table  border-x-2 border-y-2 mt-6 rounded-2xl">
                 {/* head */}
                 <thead>
                   <tr>
-                    <th></th>
-                    <th className=" text-1xl font-bold">Name</th>
+                    <th>Name</th>
                     <th>Time</th>
                     <th>Calories</th>
                   </tr>
@@ -151,9 +162,9 @@ function App() {
                 <tbody>
                   {/* row 1 */}
                   <tr>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
+                    <td>Chicken Caesar Salad</td>
+                    <td>20 minutes</td>
+                    <td>400 calories</td>
                   </tr>
                   {/* row 2 */}
                   <tr>
@@ -173,7 +184,46 @@ function App() {
                 <button className="btn btn-success">Preparing</button>
               </div>
             </div>
-          </div>
+            <div>
+              <p className="text-2xl font-bold mt-4">Currently cooking: 02</p>
+            </div>
+            <div>
+              <table className="table  border-x-2 border-y-2 mt-6 rounded-2xl mb-3">
+                {/* head */}
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Calories</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* row 1 */}
+                  <tr>
+                    <td>Spaghetti Bolognese</td>
+                    <td>30 minutes</td>
+                    <td>400 calories</td>
+                  </tr>
+                  {/* row 2 */}
+                  <tr>
+                    <td> Spaghetti Bolognese</td>
+                    <td>30 minutes</td>
+                    <td>400 calories</td>
+                  </tr>
+                  {/* row 3 */}
+                  <tr>
+                    <td>Brice Swyre</td>
+                    <td>Tax Accountant</td>
+                    <td>Red</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="text-1xl font-bold">Total Time = 45 minutes</p>
+              <p className="text-1xl font-bold">
+                Total Calories = 1050 calories
+              </p>
+            </div>
+          </section>
         </section>
       </section>
     </>
